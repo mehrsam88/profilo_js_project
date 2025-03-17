@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Make New post</title>
+    <link rel="stylesheet" href="../styles/output.css" />
+  </head>
+  <body class="bg-grey-full text-white relative">
+    <div class="container mx-auto py-5 px-10 md:px-24">
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <h3 class="font-Syne-bold text-2xl">V.V</h3>
+        </div>
+        <div class="flex items-center space-x-10">
+          <ul
+            id="nav"
+            class="font-Rubik-Medium text-[14px] space-x-6 lg:rounded-none lg:flex lg:flex-row w-full lg:w-auto lg:flex-shrink-0 lg:items-center lg:static absolute top-[64px] left-0 *:lg:my-0 *:my-4 *:cursor-pointer text-black-dark text-md bg-cream-light dark:lg:bg-black-light lg:shadow-none shadow-[0px_15px_20px_-10px] lg:translate-y-0 translate-y-[-20pc] transition-transform duration-500 z-10"
+          >
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../../public/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="Aboutme.html"
+                >About us</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <a href="manage-users.html" id="manage-users-link" class="hidden"
+            >Manage Users</a
+          >
+          <div class="flex items-center space-x-5">
+            <a href="login/login.html" id="login_button" class="nav_button"
+              >Log in</a
+            >
+            <a href="login/signin.html" id="Signin_button" class="nav_button"
+              >sign in</a
+            >
+            <div id="user-info" class="hidden space-x-2">
+              <span
+                id="username-display"
+                class="text-md font-Rubik-Regular"
+              ></span>
+              <button
+                id="logout-button"
+                class="nav_button bg-red-500 text-white px-2 py-1 rounded"
+              >
+                Log out
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- todo: make a post and add it -->
+    <h1 class="font-Syne-bold text-center mt-24 mb-12 text-5xl">Make your own post</h1>
+    <form id="create-post-form" class="p-4 mx-auto w-7/12 bg-grey-scale-500 rounded-2xl font-Rubik-SemiBold flex flex-col items-center">
+      <label>Topic post: </label>
+      <input class="border-b-2 border-grey-scale-250 outline-0 font-Rubik-Regular" type="text" id="post-title" required /><br /><br />
+
+      <label>Title post: </label>
+      <input class="border-b-2 border-grey-scale-250 outline-0 font-Rubik-Regular" type="text" id="post-topic" /><br /><br />
+
+      <label>Post text: </label>
+      <textarea class="border-2 border-grey-scale-250 outline-0 font-Rubik-Regular" id="post-content" rows="5" cols="40" required></textarea
+      ><br /><br />
+
+      <label>Post image(optional)</label>
+      <input class="bg-orange-main px-4 py-1.5 w-64 rounded-full" type="file" id="post-image" accept="image/*" /><br /><br />
+
+      <button type="submit" class="bg-orange-main px-5 py-2.5 rounded-full cursor-pointer">Create the post</button>
+    </form>
+    <footer
+    class="px-10 md:px-24 bg-grey-scale-300 flex flex-col items-center justify-center py-24 font-Syne-bold text-white space-y-2.5"
+  >
+    <h4 class="text-orange-main text-2xl">Get in Touch With Us</h4>
+    <a class="text-6xl underline" href="mailto:mehrsammohseni@gmail.com"
+      >mehrsammohseni@gmail.com</a
+    >
+    <div
+      class="grid grid-cols-3 grid-rows-2 gap-5 w-full mt-16 *:cursor-pointer"
+    >
+      <div class="flex flex-col items-center justify-center">
+        <svg
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="w-16 duration-200 hover:stroke-blue-400"
+        >
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+          ></path>
+        </svg>
+        <p>Github</p>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="assets/icons/instagram.svg" alt="twitter" class="w-16" />
+        <p>Instagram</p>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img src="assets/icons/linkedin.svg" alt="linkedin" class="w-16" />
+        <p>Linkedin</p>
+      </div>
+      <div class="w-10/12 h-0.5 bg-grey-scale-250 col-span-3 mx-auto"></div>
+    </div>
+    <div class="m-4 p-4 flex flex-col items-center justify-center">
+      <p id="quote-text" class="text-xl font-semibold"></p>
+      <p id="quote-author" class="text-md text-gray-600 mt-2"></p>
+
+      <button
+        id="fetch-quote-btn"
+        class="mt-4 px-4 py-2 bg-orange-main text-white rounded-full"
+      >
+        Get Random Advice
+      </button>
+    </div>
+
+    <h4>
+      &copy; 2021 VibeVault. All rights reserved. Designed by Mehrsam Mohseni
+    </h4>
+  </footer>
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>

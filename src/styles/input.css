@@ -1,0 +1,301 @@
+@import "tailwindcss";
+
+/***? Syne-Font ********/
+
+@font-face {
+  font-family: "Syne-semibold";
+  src: url("../../public/assets/fonts/Syne-SemiBold.eot");
+  src: url("../../public/assets/fonts/Syne-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/Syne-SemiBold.woff2") format("woff2"),
+    url("../../public/assets/fonts/Syne-SemiBold.woff") format("woff"),
+    url("../../public/assets/fonts/Syne-SemiBold.ttf") format("truetype"),
+    url("../../public/assets/fonts/Syne-SemiBold.svg#Syne-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Syne-bold";
+  src: url("Syne-Bold.eot");
+  src: url("../../public/assets/fonts/Syne-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/Syne-Bold.woff2") format("woff2"),
+    url("../../public/assets/fonts/Syne-Bold.woff") format("woff"),
+    url("../../public/assets/fonts/Syne-Bold.ttf") format("truetype"),
+    url("../../public/assets/fonts/Syne-Bold.svg#Syne-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Syne-Extrabold";
+  src: url("../../public/assets/fonts/Syne-ExtraBold.eot");
+  src: url("../../public/assets/fonts/Syne-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/Syne-ExtraBold.woff2") format("woff2"),
+    url("../../public/assets/fonts/Syne-ExtraBold.woff") format("woff"),
+    url("../../public/assets/fonts/Syne-ExtraBold.ttf") format("truetype"),
+    url("../../public/assets/fonts/Syne-ExtraBold.svg#Syne-ExtraBold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Syne-medium";
+  src: url("../../public/assets/fonts/Syne-Medium.eot");
+  src: url("../../public/assets/fonts/Syne-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/Syne-Medium.woff2") format("woff2"),
+    url("../../public/assets/fonts/Syne-Medium.woff") format("woff"),
+    url("../../public/assets/fonts/Syne-Medium.ttf") format("truetype"),
+    url("../../public/assets/fonts/Syne-Medium.svg#Syne-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Syne-regular";
+  src: url("../../public/assets/fonts/Syne-Regular.eot");
+  src: url("../../public/assets/fonts/Syne-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../public/assets/fonts/Syne-Regular.woff2") format("woff2"),
+    url("../../public/assets/fonts/Syne-Regular.woff") format("woff"),
+    url("../../public/assets/fonts/Syne-Regular.ttf") format("truetype"),
+    url("../../public/assets/fonts/Syne-Regular.svg#Syne-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/******todo:Adding Rubik font****/
+
+@font-face {
+  font-family: 'Rubik-Extrabold';
+  src:url('../../public/assets/fonts/Rubik/Rubik-ExtraBold.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBold.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBold.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBold.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBold.svg#Rubik-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-boldItalic';
+  src:url('../../public/assets/fonts/Rubik/Rubik-BoldItalic.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-BoldItalic.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-BoldItalic.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-BoldItalic.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-BoldItalic.svg#Rubik-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-ExtraBoldItali';
+  src:url('../../public/assets/fonts/Rubik/Rubik-ExtraBoldItalic.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBoldItalic.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBoldItalic.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBoldItalic.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-ExtraBoldItalic.svg#Rubik-ExtraBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Light';
+  src:url('../../public/assets/fonts/Rubik/Rubik-Light.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Light.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-Light.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-Light.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Light.svg#Rubik-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Italic';
+  src:url('../../public/assets/fonts/Rubik/Rubik-Italic.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Italic.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-Italic.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-Italic.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Italic.svg#Rubik-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-LightItalic';
+  src:url('../../public/assets/fonts/Rubik/Rubik-LightItalic.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-LightItalic.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-LightItalic.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-LightItalic.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-LightItalic.svg#Rubik-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  src:url('../../public/assets/fonts/Rubik/Rubik-Medium.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Medium.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-Medium.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-Medium.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Medium.svg#Rubik-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-MediumItalic';
+  src:url('../../public/assets/fonts/Rubik/Rubik-MediumItalic.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-MediumItalic.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-MediumItalic.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-MediumItalic.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-MediumItalic.svg#Rubik-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Regular';
+  src:url('../../public/assets/fonts/Rubik/Rubik-Regular.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Regular.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-Regular.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-Regular.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Regular.svg#Rubik-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-SemiBold';
+  src:url('../../public/assets/fonts/Rubik/Rubik-SemiBold.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBold.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBold.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBold.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBold.svg#Rubik-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Black';
+  src:url('../../public/assets/fonts/Rubik/Rubik-Black.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-Black.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Black.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-Black.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-Black.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Black.svg#Rubik-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-SemiBoldItalic';
+  src:url('../../public/assets/fonts/Rubik/Rubik-SemiBoldItalic.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBoldItalic.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBoldItalic.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBoldItalic.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-SemiBoldItalic.svg#Rubik-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-BlackItalic';
+  src:url('../../public/assets/fonts/Rubik/Rubik-BlackItalic.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-BlackItalic.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-BlackItalic.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-BlackItalic.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-BlackItalic.svg#Rubik-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  src:url('../../public/assets/fonts/Rubik/Rubik-Bold.eot');
+  src:url('../../public/assets/fonts/Rubik/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Bold.woff2') format('woff2'),
+      url('../../public/assets/fonts/Rubik/Rubik-Bold.woff') format('woff'),
+      url('../../public/assets/fonts/Rubik/Rubik-Bold.ttf') format('truetype'),
+      url('../../public/assets/fonts/Rubik/Rubik-Bold.svg#Rubik-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@theme {
+  --font-Syne-regular: "Syne-regular";
+  --font-Syne-medium: "Syne-medium";
+  --font-Syne-Extra-bold: "Syne-Extrabold";
+  --font-Syne-bold: "Syne-bold";
+  --font-Syne-Semi-bold: "Syne-semibold";
+  --font-Rubik-Extrabold: "Rubik-Extrabold";
+  --font-Rubik-boldItalic: "Rubik-boldItalic";
+  --font-Rubik-ExtraBoldItali: "Rubik-ExtraBoldItali";
+  --font-Rubik-Light: "Rubik-Light";
+  --font-Rubik-Italic: "Rubik-Italic";
+  --font-Rubik-LightItalic: "Rubik-LightItalic";
+  --font-Rubik-Medium: "Rubik-Medium";
+  --font-Rubik-MediumItalic: "Rubik-MediumItalic";
+  --font-Rubik-Regular: "Rubik-Regular";
+  --font-Rubik-SemiBold: "Rubik-SemiBold";
+  --font-Rubik-Black: "Rubik-Black";
+  --font-Rubik-bold: "Rubik-Bold";
+  --color-orange-main:#FF9143;
+  --color-grey-full:#1A1A1A;
+  --color-grey-scale-300:#131313;
+  --color-grey-scale-500:#262A2C;
+  --color-grey-scale-200:#696969;
+  --color-grey-scale-250:#949494;
+}
+
+@layer components{
+  .nav_button{
+    @apply pt-1.5 pb-2 px-6 bg-black border-2 border-[#ffffff42] rounded-[30px] cursor-pointer;
+  }
+  .shadow_blur{
+    box-shadow: 0px 0px 350px 5px #ffffff7d;
+    @apply w-64 h-36 rounded-full bg-[#353535] blur-2xl -z-10;
+  }
+   .shadow_blur_small{
+    box-shadow: 0px 0px 50px 5px #ffffff7d;
+    @apply w-64 h-36 rounded-full bg-[#353535] blur-2xl -z-10;
+   }
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/styles/output.css" />
+    <title>VibeVault</title>
+  </head>
+  <body class="bg-grey-full text-white relative">
+    <!-- todo: nav construction -->
+    <div class="container mx-auto py-5 px-10 md:px-24">
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <h3 class="font-Syne-bold text-2xl">V.V</h3>
+        </div>
+        <div class="flex items-center space-x-10">
+          <ul
+            id="nav"
+            class="font-Rubik-Medium text-[14px] space-x-6 lg:rounded-none lg:flex lg:flex-row w-full lg:w-auto lg:flex-shrink-0 lg:items-center lg:static absolute top-[64px] left-0 *:lg:my-0 *:my-4 *:cursor-pointer text-black-dark text-md bg-cream-light dark:lg:bg-black-light lg:shadow-none shadow-[0px_15px_20px_-10px] lg:translate-y-0 translate-y-[-20pc] transition-transform duration-500 z-10"
+          >
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../src/pages/blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../src/pages/Aboutme.html"
+                >About us</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <a
+            href="../src/pages/manage-users.html"
+            id="manage-users-link"
+            class="hidden"
+            >Manage Users</a
+          >
+          <div class="flex items-center space-x-5">
+            <a
+              href="../src/pages/login/login.html"
+              id="login_button"
+              class="nav_button"
+              >Log in</a
+            >
+            <a
+              href="../src/pages/login/signin.html"
+              id="Signin_button"
+              class="nav_button"
+              >sign in</a
+            >
+            <div id="user-info" class="hidden space-x-2">
+              <span
+                id="username-display"
+                class="text-md font-Rubik-Regular"
+              ></span>
+              <button
+                id="logout-button"
+                class="nav_button bg-red-500 text-white px-2 py-1 rounded"
+              >
+                Log out
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--* container first view -->
+    <div
+      class="w-full h-auto px-10 md:px-24 flex justify-center items-center mt-24 relative"
+    >
+      <div class="flex flex-col items-center justify-center mt-16">
+        <div class="absolute right-[16%] top-[32%] shadow_blur"></div>
+        <h1 class="text-7xl font-Syne-bold text-center mb-20">
+          Adaptive <span class="text-orange-main"> Programmer </span> <br />for
+          Your Brand
+        </h1>
+        <div
+          class="relative inline-flex items-center justify-center gap-4 group"
+        >
+          <div
+            class="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
+          ></div>
+          <a
+            role="button"
+            class="group relative inline-flex items-center justify-center text-base rounded-full bg-orange-main px-8 py-3 font-Rubik-bold text-white transition-all duration-200 hover:bg-[] hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+            title="payment"
+            href="#"
+            >Check My Works<svg
+              aria-hidden="true"
+              viewBox="0 0 10 10"
+              height="10"
+              width="10"
+              fill="none"
+              class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
+            >
+              <path
+                d="M0 5h7"
+                class="transition opacity-0 group-hover:opacity-100"
+              ></path>
+              <path
+                d="M1 1l4 4-4 4"
+                class="transition group-hover:translate-x-[3px]"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--* container Profilo -->
+    <section class="px-10 md:px-24 mt-[20%] relative">
+      <div class="flex justify-between items-center space-x-10">
+        <div class="flex flex-col space-y-4">
+          <div class="absolute left-[-25%] top-[20%] shadow_blur"></div>
+          <h2 class="font-Syne-bold text-[56px]">
+            Let’s get know <br />
+            about me closer
+          </h2>
+          <p class="font-Rubik-Regular text-[18px text-[#A8A8A8]">
+            Aaronn is a New York-based visual designer focusing on branding
+            <br />
+            and visual identity. Her portfolio showcases her wide range of
+            <br />
+            work, spanning books, posters and web design.
+          </p>
+          <div class="relative gap-4 group mt-8">
+            <div
+              class="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
+            ></div>
+            <a
+              role="button"
+              class="group relative inline-flex items-center justify-center text-base rounded-full bg-orange-main px-10 py-4 font-Rubik-bold text-white transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+              title="payment"
+              href="../src/pages/Aboutme.html"
+              >Discover More About Me<svg
+                aria-hidden="true"
+                viewBox="0 0 10 10"
+                height="10"
+                width="10"
+                fill="none"
+                class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
+              >
+                <path
+                  d="M0 5h7"
+                  class="transition opacity-0 group-hover:opacity-100"
+                ></path>
+                <path
+                  d="M1 1l4 4-4 4"
+                  class="transition group-hover:translate-x-[3px]"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="h-8 w-28 border-2 border-orange-main rounded-full absolute right-0 -top-[2.5%]"
+          ></div>
+          <div
+            class="w-14 h-44 border-2 border-orange-main rounded-full absolute -left-[9%] bottom-[5%]"
+          ></div>
+          <img
+            src="assets/img/prof.svg"
+            alt="profile"
+            class="rounded-4xl w-full h-full"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- todo: BLog Part -->
+    <div class="container mx-auto py-5 px-10 md:px-24 mt-[15%] relative">
+      <div class="flex flex-col items-center justify-center mt-16">
+        <div class="absolute right-[16%] top-[10%] shadow_blur_small"></div>
+        <h1 class="text-6xl font-Syne-bold text-center mb-20">
+          My Blog Highlight
+        </h1>
+        <a
+          class="py-4 px-8 bg-none border-2 border-orange-main text-white rounded-full"
+          href="../src/pages/Blog.html"
+        >
+          Explore more
+        </a>
+      </div>
+
+      <div
+        class="grid md:grid-cols-3 md:grid-rows-1 grid-cols-2 grid-rows-3 gap-5 mt-24"
+      >
+        <div class="relative flex flex-col rounded-4xl">
+          <img
+            src="assets/img/1__f27S-qQF2CAASt5bOwqg.webp"
+            alt=""
+            class="rounded-4xl"
+          />
+          <div
+            class="flex flex-col absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-4xl p-5"
+          >
+            <div class="text-white px-2 mt-3">
+              <h3 id="blog_Title" class="font-Syne-bold text-2xl">
+                How to create a website
+              </h3>
+              <p id="Blog_Writter">
+                <span class="text-[#606060]">Writer:</span> Mehrsam
+              </p>
+            </div>
+            <button
+              class="px-6 py-2 bg-[#212936] rounded-full w-32 mt-auto cursor-pointer"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        <div class="relative flex flex-col rounded-4xl">
+          <img
+            src="assets/img/what-is-bootstrap.webp"
+            alt=""
+            class="rounded-4xl h-full"
+          />
+          <div
+            class="flex flex-col absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-4xl p-5"
+          >
+            <div class="text-white px-2 mt-3">
+              <h3 id="blog_Title" class="font-Syne-bold text-2xl">
+                How to create a website
+              </h3>
+              <p id="Blog_Writter">
+                <span class="text-[#606060]">Writer:</span> Mehrsam
+              </p>
+            </div>
+            <button
+              class="px-6 py-2 bg-[#212936] rounded-full w-32 mt-auto cursor-pointer"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        <div class="relative flex flex-col rounded-4xl">
+          <img
+            src="assets/img/S6loCK6fY.webp"
+            alt=""
+            class="rounded-4xl h-64"
+          />
+          <div
+            class="flex flex-col absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-4xl p-5"
+          >
+            <div class="text-white px-2 mt-3">
+              <h3 id="blog_Title" class="font-Syne-bold text-2xl">
+                How to create a website
+              </h3>
+              <p id="Blog_Writter">
+                <span class="text-[#606060]">Writer:</span> Mehrsam
+              </p>
+            </div>
+            <button
+              class="px-6 py-2 bg-[#212936] rounded-full w-32 mt-auto cursor-pointer"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <!-- todo: ADD Testimonial part -->
+    <div class="px-10 md:px-24 my-[20%] grid grid-cols-4 space-x-5 relative">
+      <div class="absolute -left-[16%] top-[10%] shadow_blur"></div>
+      <div class="flex flex-col space-y-2 col-span-3">
+        <h1 class="font-Syne-bold text-6xl">Testimonial</h1>
+        <p class="font-Rubik-Regular text-[#949494]">
+          “Aaronn was fantastic to work with from start to finish. We were
+          looking for a simple, stand-out logo and he delivered. I tried
+          designing the logo myself thinking I wouldn’t need to pay the money
+          for a professional graphic designer but I was very wrong. Working with
+          Aaronn was worth every penny and was surprisingly affordable! I
+          remember him saying simplicity is key to a successful logo and boy he
+          was right. I can’t thank Aaronn enough for his effort and
+          professionalism. I would recommend him to anyone looking for a
+          design!”
+        </p>
+        <span class="font-Syne-bold text-2xl">-Mehrsam</span>
+      </div>
+      <img src="../public/assets/icons/Quote.svg" alt="" class="ml-32 -mt-24" />
+    </div>
+    <footer
+      class="px-10 md:px-24 bg-grey-scale-300 flex flex-col items-center justify-center py-24 font-Syne-bold text-white space-y-2.5"
+    >
+      <h4 class="text-orange-main text-2xl">Get in Touch With Us</h4>
+      <a class="text-6xl underline" href="mailto:mehrsammohseni@gmail.com"
+        >mehrsammohseni@gmail.com</a
+      >
+      <div
+        class="grid grid-cols-3 grid-rows-2 gap-5 w-full mt-16 *:cursor-pointer"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="w-16 duration-200 hover:stroke-blue-400"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+          <p>Github</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="assets/icons/instagram.svg" alt="twitter" class="w-16" />
+          <p>Instagram</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="assets/icons/linkedin.svg" alt="linkedin" class="w-16" />
+          <p>Linkedin</p>
+        </div>
+        <div class="w-10/12 h-0.5 bg-grey-scale-250 col-span-3 mx-auto"></div>
+      </div>
+      <div class="m-4 p-4 flex flex-col items-center justify-center">
+        <p id="quote-text" class="text-xl font-semibold"></p>
+        <p id="quote-author" class="text-md text-gray-600 mt-2"></p>
+
+        <button
+          id="fetch-quote-btn"
+          class="mt-4 px-4 py-2 bg-orange-main text-white rounded-full"
+        >
+          Get Random Advice
+        </button>
+      </div>
+
+      <h4>
+        &copy; 2021 VibeVault. All rights reserved. Designed by Mehrsam Mohseni
+      </h4>
+    </footer>
+    <script type="module" src="../src/scripts/main.js"></script>
+  </body>
+</html>

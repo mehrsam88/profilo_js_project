@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="../../styles/output.css" />
+  </head>
+  <body
+    class="text-white bg-[url(../../../public/assets/icons/bg-low.svg)] bg-cover"
+  >
+    <div class="container mx-auto py-5 px-10 md:px-24">
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <h3 class="font-Syne-bold text-2xl">V.V</h3>
+        </div>
+        <div class="flex items-center space-x-10">
+          <ul
+            id="nav"
+            class="font-Rubik-Medium text-[14px] space-x-6 lg:rounded-none lg:flex lg:flex-row w-full lg:w-auto lg:flex-shrink-0 lg:items-center lg:static absolute top-[64px] left-0 *:lg:my-0 *:my-4 *:cursor-pointer text-black-dark text-md bg-cream-light dark:lg:bg-black-light lg:shadow-none shadow-[0px_15px_20px_-10px] lg:translate-y-0 translate-y-[-20pc] transition-transform duration-500 z-10"
+          >
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../../../public/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../Aboutme.html"
+                >About us</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <a
+            href="manage-users.html"
+            id="manage-users-link"
+            class="hidden"
+            >Manage Users</a
+          >
+          <div class="flex items-center space-x-5">
+            <a
+              href="login/login.html"
+              id="login_button"
+              class="nav_button"
+              >Log in</a
+            >
+            <a
+              href="login/signin.html"
+              id="Signin_button"
+              class="nav_button"
+              >sign in</a
+            >
+            <div id="user-info" class="hidden space-x-2">
+              <span
+                id="username-display"
+                class="text-md font-Rubik-Regular"
+              ></span>
+              <button
+                id="logout-button"
+                class="nav_button bg-red-500 text-white px-2 py-1 rounded"
+              >
+                Log out
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="flex flex-col w-3/12 mx-auto mt-10 p-16 backdrop-blur-xl bg-[#49494975] border-2 border-grey-scale-250 rounded-4xl"
+    >
+      <h1 class="font-Syne-bold text-4xl">Log In</h1>
+      <div id="message" class="mb-4"></div>
+      <form id="login-form" class="flex flex-col space-y-8 mt-8">
+        <div class="relative w-full">
+          <input
+            name="username"
+            id="login-username"
+            type="text"
+            placeholder=""
+            class="border-b w-full border-grey-scale-250 py-1 focus:border-b-2 focus:border-white transition-colors focus:outline-none peer bg-inherit"
+            required
+          />
+          <label
+            for="username"
+            class="absolute font-Rubik-Regular -top-0 text-xs left-0 cursor-text peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-white peer-placeholder-shown:top-1 peer-placeholder-shown:text-sm"
+          >
+            Name
+          </label>
+        </div>
+
+        <div class="relative w-full">
+          <input
+            name="username"
+            id="login-password"
+            type="text"
+            placeholder=""
+            class="border-b w-full border-grey-scale-250 py-1 focus:border-b-2 focus:border-white transition-colors focus:outline-none peer bg-inherit"
+            required
+          />
+          <label
+            for="username"
+            class="absolute font-Rubik-Regular -top-0 text-xs left-0 cursor-text peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-white peer-placeholder-shown:top-1 peer-placeholder-shown:text-sm"
+          >
+            Password
+          </label>
+        </div>
+        <button type="submit" class="bg-orange-main px-6 py-3 rounded-full">
+          Log In
+        </button>
+      </form>
+      <p class="mt-4 font-Rubik-Regular text-sm">Don't have an account? <a href="signin.html" class="text-orange-main">Sign Up</a></p>
+    </div>
+    <script type="module" src="../../scripts/main.js"></script>
+  </body>
+</html>

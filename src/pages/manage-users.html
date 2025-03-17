@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>Users managment
+    <link rel="stylesheet" href="../styles/output.css" />
+  </head>
+  <body
+    class="text-white bg-[url(../../../public/assets/icons/bg-low.svg)] bg-cover"
+  >
+    <div class="container mx-auto py-5 px-10 md:px-24">
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <h3 class="font-Syne-bold text-2xl">V.V</h3>
+        </div>
+        <div class="flex items-center space-x-10">
+          <ul
+            id="nav"
+            class="font-Rubik-Medium text-[14px] space-x-6 lg:rounded-none lg:flex lg:flex-row w-full lg:w-auto lg:flex-shrink-0 lg:items-center lg:static absolute top-[64px] left-0 *:lg:my-0 *:my-4 *:cursor-pointer text-black-dark text-md bg-cream-light dark:lg:bg-black-light lg:shadow-none shadow-[0px_15px_20px_-10px] lg:translate-y-0 translate-y-[-20pc] transition-transform duration-500 z-10"
+          >
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../../public/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="Aboutme.html"
+                >About us</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <a href="manage-users.html" id="manage-users-link" class="hidden"
+            >Manage Users</a
+          >
+          <div class="flex items-center space-x-5">
+            <a href="login/login.html" id="login_button" class="nav_button"
+              >Log in</a
+            >
+            <a href="login/signin.html" id="Signin_button" class="nav_button"
+              >sign in</a
+            >
+            <div id="user-info" class="hidden space-x-2">
+              <span
+                id="username-display"
+                class="text-md font-Rubik-Regular"
+              ></span>
+              <button
+                id="logout-button"
+                class="nav_button bg-red-500 text-white px-2 py-1 rounded"
+              >
+                Log out
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="max-w-3xl mx-auto mt-10 p-4 bg-grey-scale-500 rounded-4xl">
+      <h1 class="text-xl font-bold mb-4 text-center">Private Page</h1>
+      <table class="w-full border-collapse rounded-full">
+        <thead>
+          <tr>
+            <th class="py-2 px-4 border">Username</th>
+            <th class="py-2 px-4 border">Role</th>
+            <th class="py-2 px-4 border">Changes</th>
+          </tr>
+        </thead>
+        <tbody id="users-table-body"></tbody>
+      </table>
+      <button
+        id="save-roles-btn"
+        class="mt-4 px-4 py-2 bg-orange-main text-white rounded-full mx-auto"
+      >
+        Save Changes
+      </button>
+    </div>
+
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>

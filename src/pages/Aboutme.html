@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <title>About me</title>
+  </head>
+  <body class="bg-grey-full text-white relative">
+    <div class="container mx-auto py-5 px-10 md:px-24">
+        <nav class="flex justify-between items-center">
+          <div class="flex items-center space-x-2">
+            <h3 class="font-Syne-bold text-2xl">V.V</h3>
+          </div>
+          <div class="flex items-center space-x-10">
+            <ul
+            id="nav"
+            class=" font-Rubik-Medium text-[14px] space-x-6 lg:rounded-none lg:flex lg:flex-row w-full lg:w-auto lg:flex-shrink-0 lg:items-center lg:static absolute top-[64px] left-0 *:lg:my-0 *:my-4 *:cursor-pointer text-black-dark text-md bg-cream-light dark:lg:bg-black-light lg:shadow-none shadow-[0px_15px_20px_-10px] lg:translate-y-0 translate-y-[-20pc] transition-transform duration-500 z-10"
+          >
+            <li class="relative">
+              <a
+                class="dark:text-white  flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="../../public/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="Aboutme.html"
+                >About us</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="dark:text-white  flex lg:justify-center before:absolute before:w-[80%] before:h-0.5 before:rounded-[4px] lg:before:bg-[#18272F] dark:lg:before:bg-white lg:before:-bottom-1 lg:before:origin-right lg:before:scale-x-0 lg:hover:before:origin-left lg:hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-in-out"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <a href="manage-users.html" id="manage-users-link" class="hidden">Manage Users</a>
+            <div class="flex items-center space-x-5">
+              <a href="login/login.html" id="login_button" class="nav_button">Log in</a>
+              <a href="login/signin.html" id="Signin_button" class="nav_button">sign in</a>
+              <div id="user-info" class="hidden space-x-2">
+                <span id="username-display" class="text-md font-Rubik-Regular"></span>
+                <button id="logout-button" class="nav_button bg-red-500 text-white px-2 py-1 rounded">
+                  Log out
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <!-- todo: main container -->
+    <div class="px-10 md:px-24 mt-[8%]">
+      <div class="flex flex-col relative">
+        <div class="absolute -left-[15%] top-[5%] shadow_blur_small"></div>
+        <h1 class="font-Syne-bold text-7xl">About Me</h1>
+        <p class="text-[#949494] text-[18px] font-Rubik-Medium">
+          Little Brief About Myself
+        </p>
+        <div class="h-0.5 w-full bg-grey-scale-250 mt-12"></div>
+        <div class="grid grid-cols-6 grid-rows-2 mt-[15%] gap-x-24">
+          <div class="col-span-3">
+            <h1 class="text-[80px] font-Syne-bold">
+              My mission is to make Webs easier.
+            </h1>
+          </div>
+          <div class="col-span-3 my-24">
+            <p class="text-[21px] text-grey-scale-250">
+              Create custom Designs with AARONN that converts more visitors than
+              any website. With lots of unique design, you can easily select a
+              logo without hassle. Create custom landing logos with AARONN that
+              converts more visitors than any website. With lots of revisions,
+              you can easily build a logo without porbolem.
+            </p>
+          </div>
+          <div class="col-span-2 w-full h-full relative">
+            <div
+              class="w-14 h-44 border-2 border-orange-main rounded-full absolute -left-[9%] bottom-[5%]"
+            ></div>
+            <img
+              src="../../public/assets/icons/Vector2.svg"
+              alt="prof"
+              class="rounded-4xl h-full"
+            />
+          </div>
+          <div class="col-span-4 relative">
+            <div
+              class="h-8 w-28 border-2 border-orange-main rounded-full absolute right-0 -top-[2.5%]"
+            ></div>
+            <img
+              src="../../public/assets/icons/Vector.svg"
+              alt="prof"
+              class="rounded-4xl w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="px-10 md:px-24 bg-grey-scale-300 flex flex-col items-center justify-center py-24 font-Syne-bold text-white space-y-2.5 mt-[10%]"
+    >
+      <h4 class="text-orange-main text-2xl">Get in Touch With Us</h4>
+      <a class="text-6xl underline" href="mailto:mehrsammohseni@gmail.com"
+        >mehrsammohseni@gmail.com</a
+      >
+      <div
+        class="grid grid-cols-3 grid-rows-2 gap-5 w-full mt-16 *:cursor-pointer"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="w-16 duration-200 hover:stroke-blue-400"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+          <p>Github</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="../../public/assets/icons/instagram.svg" alt="twitter" class="w-16" />
+          <p>Instagram</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img src="../../public/assets/icons/linkedin.svg" alt="linkedin" class="w-16" />
+          <p>Linkedin</p>
+        </div>
+        <div class="w-10/12 h-0.5 bg-grey-scale-250 col-span-3 mx-auto"></div>
+      </div>
+      <h4>
+        &copy; 2021 VibeVault. All rights reserved. Designed by Mehrsam Mohseni
+      </h4>
+    </footer>
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>
